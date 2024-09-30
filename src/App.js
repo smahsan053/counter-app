@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Counter from "./components/Counter";
+import Trails from "./components/Trails";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-black flex flex-row justify-evenly items-center w-full h-screen">
+      <div className="w-1/2 max-w-md">
+        <Counter />
+      </div>
+
+      <div className="w-1/2 max-w-lg h-[640px] overflow-hidden">
+        <Trails />
+      </div>
     </div>
   );
 }
